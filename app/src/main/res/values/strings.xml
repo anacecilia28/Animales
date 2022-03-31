@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Animales</string>
+    <string name="look_up_word">Look up animal in a Browser Search</string>
+    <string name="look_up_words">Show Stored Animals</string>
+</resources>
