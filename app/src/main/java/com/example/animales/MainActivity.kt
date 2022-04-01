@@ -9,6 +9,8 @@ import com.example.animales.databinding.ActivityMainBinding
 class MainActivity : AppCompatActivity() {
     private lateinit var recyclerView: RecyclerView
 
+    private var isLinearLayoutManager = true
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
 

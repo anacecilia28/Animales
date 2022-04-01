@@ -23,7 +23,7 @@ class TipoAdapter(context: Context):
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TipoViewHolder {
-        TODO("Not yet implemented")
+
         val layout = LayoutInflater
             .from(parent.context)
             .inflate(R.layout.item_view, parent, false)
@@ -35,19 +35,22 @@ class TipoAdapter(context: Context):
     }
 
     override fun onBindViewHolder(holder: TipoAdapter.TipoViewHolder, position: Int) {
-        TODO("Not yet implemented")
-        val item = tipoAnimal[position]
+
+        val item = tipoAnimal.get(position)
         // Needed to call startActivity
-        val context = holder.view.context
+        //Acá
+        //val context = holder.view.context
 
         // Set the text of the TipoViewHolder
-        holder.button.text = item
+        holder.button.text = item.toString()
+
 
     }
 
-    override fun getItemCount(): Int {
+    /*override fun getItemCount(): Int {
         TODO("Not yet implemented")
-    }
+    }*/
+    override fun getItemCount(): Int = tipoAnimal.size
 
     // Setup custom accessibility delegate to set the text read with
     // an accessibility service
